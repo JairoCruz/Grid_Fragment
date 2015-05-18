@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_rate">
+        <item>Bueno</item>
+        <item>Malo</item>
+    </string-array>
+
+    <string-array name="dialog_option">
+        <item>Opcion A</item>
+        <item>Opcion B</item>
+    </string-array>
+
+
+    <string-array name="array_rooms_standard">
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+    </string-array>
+
+    <string-array name="array_rooms_luxury">
+        <item>301</item>
+        <item>302</item>
+    </string-array>
+</resources>
