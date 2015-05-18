@@ -16,7 +16,7 @@
             android:label="@string/title_activity_room_list" >
         </activity>-->
         <activity
-            android:name=".RoomGridActivity"
+            android:name=".RoomGridFragment"
             android:label="@string/title_activity_room_list" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ejemplo2.tse.myejemplo2.RoomGridActivity">
+    tools:context="ejemplo2.tse.myejemplo2.RoomGridFragment">
 
     <GridView
         android:layout_width="match_parent"
