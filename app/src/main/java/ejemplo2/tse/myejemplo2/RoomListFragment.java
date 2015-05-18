@@ -1,7 +1,9 @@
 package ejemplo2.tse.myejemplo2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -36,4 +38,12 @@ public class RoomListFragment extends ListFragment {
     }
 
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        Room clicked_room = (Room) l.getItemAtPosition(position);
+        Intent intent = new Intent(getActivity(), RoomDetailActivity.class);
+        intent.putExtra(RoomDetailActivity.ROOM_TYPE,clicked_room.getRoom_type());
+        intent.putExtra(RoomDetailActivity.ROOM_NUMBER,clicked_room.getRoom_number());
+        startActivity(intent);
+    }
 }
