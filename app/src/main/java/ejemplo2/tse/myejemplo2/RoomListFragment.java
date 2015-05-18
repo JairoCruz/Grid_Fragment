@@ -1,10 +1,7 @@
 package ejemplo2.tse.myejemplo2;
 
-import android.app.ListActivity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.app.ListFragment;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -13,12 +10,12 @@ import ejemplo2.tse.myejemplo2.data.CustomAdapter;
 import ejemplo2.tse.myejemplo2.models.Room;
 
 
-public class RoomListActivity extends ListActivity {
+public class RoomListFragment extends ListFragment {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_room_list);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
 
         ListView list = getListView();
         ArrayList<Room> rooms = new ArrayList<Room>();
@@ -33,7 +30,7 @@ public class RoomListActivity extends ListActivity {
             rooms.add(one_room);
         }
 
-        CustomAdapter adapter = new CustomAdapter(this,rooms,true);
+        CustomAdapter adapter = new CustomAdapter(getActivity(),rooms,true);
         setListAdapter(adapter);
 
     }

@@ -1,10 +1,8 @@
 package ejemplo2.tse.myejemplo2;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.GridView;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -19,7 +17,7 @@ public class RoomGridActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_room_grid);
+        setContentView(R.layout.fragment_room_grid);
 
         grid = (GridView) findViewById(R.id.grid_rooms);
 
